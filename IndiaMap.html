@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>India Interactive Map</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          display: flex;
+        }
+        #map {
+          flex: 2;
+        }
+        body {
+          margin: 0;
+        }
+
+    svg {
+      width: 101.5vw;
+      height: 93.5vh;
+      background-image: url('states-india.png'); /* Your terrain image */
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .state {
+      fill: rgba(255, 255, 255, 0);
+      stroke: #999;
+      stroke-width: 0.1;
+      cursor: pointer;
+    }
+
+    .state:hover {
+      fill: rgba(255, 255, 0, 0.4);
+    }
+
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px;
+      border: 1px solid #ccc;
+      font-family: sans-serif;
+    }
+
+    path {
+      stroke: #666;
+      stroke-width: 0.5;
+      fill: #cce5df;
+      cursor: pointer;
+    }
+    path:hover {
+      fill: #69b3a2;
+    }
+    .carousel {
+      position: relative;
+      width: 500px;
+      height: 720px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    .carousel-item {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel-item.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      padding: 4px 0;
+      background-color: #f8f8f8;
+    }
+        .state-border {
+    fill: none;
+    stroke: #333;
+    stroke-width: 15.5;
+}
+
+.state-border.selected {
+    stroke: red;
+    stroke-width: 30;
+}
+    </style>
+</head>
+<body>
+<div id="info">
+    <h2>State Info</h2>
+    <div id="details">Click a state to see info.</div>
+</div>
+<svg></svg>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+    function zoomed(event) {
+    svg.selectAll('path')  // Or use a group like `g` if paths are inside a `<g>`
+        .attr('transform', event.transform);
+}
+
+    function createCarousel(images, idPrefix) {
+  if (!images || images.length === 0) return "";
+
+  const items = images.map((img, i) => `
+    <div class="carousel-item ${i === 0 ? "active" : ""}" id="${idPrefix}-item-${i}">
+      <img src="${img.src}" alt="${img.caption}">
+      <div class="caption">${img.caption || ""}</div>
+    </div>
+  `).join("");
+
+  setTimeout(() => {
+    startAutoSlide(idPrefix, images.length);
+  }, 0); // Delay execution to wait for DOM
+
+  return `<div class="carousel" id="${idPrefix}-carousel">${items}</div>`;
+}
+
+function startAutoSlide(prefix, total) {
+  let current = 0;
+  setInterval(() => {
+    const next = (current + 1) % total;
+    for (let i = 0; i < total; i++) {
+      const item = document.getElementById(`${prefix}-item-${i}`);
+      if (item) item.classList.remove("active");
+    }
+    const nextItem = document.getElementById(`${prefix}-item-${next}`);
+    if (nextItem) nextItem.classList.add("active");
+    current = next;
+  }, 2000);//2 seconds
+
+}
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    const svg = d3.select("svg");
+
+    const projection = d3.geoMercator()
+      .center([81.6, 20.2]) // Rough center of India
+      .scale(1228)
+      .rotate([1.25, -3.8, 0.1])
+      .translate([width / 1.89 , height / 1.98]);
+
+    const path = d3.geoPath().projection(projection);
+    const zoom = d3.zoom()
+    .scaleExtent([1, 8])
+    .on("zoom", zoomed);
+
+
+    const stateInfo = {
+      "Tamil Nadu": {
+        monuments: "Brihadeeswarar Temple, Mahabalipuram",
+        cultureImages: [
+
+      { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Brihadesvara_Temple%2C_Tanjavur%2C_India_02.jpg/500px-Brihadesvara_Temple%2C_Tanjavur%2C_India_02.jpg", caption:"BrihadeeswararTemple"},
+      { src: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Five_Rathas_-_Mahabalipuram.jpg", caption:"Mahabalipuram Temple"},
+      { src: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Masala_dosa.jpg", caption:"dosa"},
+      { src: "https://upload.wikimedia.org/wikipedia/commons/9/97/Chettinad_Chicken.jpg", caption:"chicken"},
+      { src: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bharatanatyam_Performance_DS.jpg", caption:"Mahabalipuram Temple"}
+
+    ],
+        food: "Dosa, Sambar, Chettinad cuisine",
+
+        dance: "Bharatanatyam",
+
+        language: "Tamil",
+        rivers: "Cauvery, Vaigai"
+      },
+      "Rajasthan": {
+        monuments: "Hawa Mahal, Amber Fort",
+        food: "Dal Baati Churma",
+        dance: "Ghoomar",
+        language: "Hindi, Rajasthani",
+        rivers: "Chambal, Banas"
+      }
+      // Add more states as needed
+    };
+
+    d3.json("https://cdn.jsdelivr.net/gh/udit-001/india-maps-data@dc5d493/geojson/india.geojson").then(function(data) {
+      svg.selectAll("path")
+        .data(data.features)
+        .enter()
+        .append("path")
+        .attr("d", path)
+        .attr("class", "state")
+        .on("click", function(event, d) {
+
+          const [[x0, y0], [x1, y1]] = path.bounds(d);
+          const scale = 0.9 / Math.max((x1 - x0) / width, (y1 - y0) / height);
+            const translate = [(width - scale * (x0 + x1)) / 2, (height - scale * (y0 + y1)) / 2];
+
+          svg.transition().duration(750) .call(zoom.transform,
+            d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale)
+        );
+        // Highlight only the clicked state
+    svg.selectAll(".state")
+        .style("opacity", s => (s === d ? 1 : 0));  // Hide other states
+
+    svg.selectAll(".state-border")
+        .classed("selected", s => s === d);
+
+    // Add thick border style
+    d3.selectAll(".state-border").style("stroke-width", s => s === d ? 20 : 0);
+
+          const name = d.properties.st_nm;
+          const info = stateInfo[name];
+
+          d3.select("#details").html(info ? `
+            <h3>${name}</h3>
+            <p><strong>Monuments:</strong> ${info.monuments}</p>
+            <p><strong>Food:</strong> ${info.food}</p>
+            <p><strong>Dance:</strong> ${info.dance}</p>
+            <p><strong>Language:</strong> ${info.language}</p>
+            <p><strong>Rivers:</strong> ${info.rivers}</p>
+             ${createCarousel(info.cultureImages, "culture")}
+          ` : `<p>No info available for <strong>${name}</strong>.</p>`);
+
+           d3.select("svg").style("background-image", "none");
+          // Refresh after 30 seconds (30,000 milliseconds)
+            setTimeout(() => {
+                location.reload();
+            }, 30000);
+
+        });
+    });
+</script>
+</body>
+</html>
