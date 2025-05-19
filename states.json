@@ -1,0 +1,443 @@
+[
+  {
+    "name": "Tamil Nadu",
+    "fact": "The Meenakshi Temple in Madurai has 33,000 statues, more than stars you can count at night!",
+    "language": "Tamil",
+    "greeting": "Vanakkam",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Brihadisvara_Temple%2C_Thanjavur.jpg/500px-Brihadisvara_Temple%2C_Thanjavur.jpg",        "caption": "Brihadeeswarar Temple"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shore_Temple%2C_Mahabalipuram.jpg/500px-Shore_Temple%2C_Mahabalipuram.jpg",
+        "caption": "Shore Temple, Mahabalipuram"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Meenakshi_Amman_Temple.jpg/500px-Meenakshi_Amman_Temple.jpg",
+        "caption": "Meenakshi Temple"
+      }
+    ]
+  },
+  {
+    "name": "Rajasthan",
+    "fact": "Jaipur, the Pink City, has pink buildings that glow at sunset, like a fairy-tale kingdom!",
+    "language": "Hindi, Rajasthani",
+    "greeting": "Ram Ram",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Hawa_Mahal_Jaipur.jpg/500px-Hawa_Mahal_Jaipur.jpg",
+        "caption": "Hawa Mahal"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Amber_Fort%2C_Jaipur%2C_India.jpg/500px-Amber_Fort%2C_Jaipur%2C_India.jpg",
+        "caption": "Amber Fort"
+      }
+    ]
+  },
+  {
+    "name": "Andhra Pradesh",
+    "fact": "The city of Amravati has the biggest Buddhist stupa in India, as wide as 10 school buses parked side by side!",
+    "language": "Telugu",
+    "greeting": "NamaskÄram",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Amaravati_Stupa_Relief.jpg/500px-Amaravati_Stupa_Relief.jpg",
+        "caption": "Amaravati Stupa"
+      }
+    ]
+  },
+  {
+    "name": "Arunachal Pradesh",
+    "fact": "This state has over 26 different tribes, each with its own language, like having 26 different ways to say 'hello'!",
+    "language": "English, Hindi, local tribal languages-Nyishi",
+    "greeting": "Nī mína",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tawang_Monastery_2012.jpg/500px-Tawang_Monastery_2012.jpg",
+        "caption": "Tawang Monastery"
+      }
+    ]
+  },
+  {
+    "name": "Assam",
+    "fact": "Assam grows the tea you might drink! It’s one of the world’s top tea producers, with tea gardens as big as cities.",
+    "language": "Assamese, Bodo","greeting": "Nomoskar",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Assam_tea_garden.jpg/500px-Assam_tea_garden.jpg",
+        "caption": "Assam Tea Garden"
+      }
+    ]
+  },
+  {
+    "name": "Bihar",
+    "fact": "The ancient university of Nalanda in Bihar was a school 1,500 years ago where students from all over Asia came to learn!",
+    "language": "Hindi, Maithili","greeting": "Namaste",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Nalanda_Archaeological_Site.jpg/500px-Nalanda_Archaeological_Site.jpg",
+        "caption": "Nalanda University Ruins"
+      }
+    ]
+  },
+  {
+    "name": "Chhattisgarh",
+    "fact": "This state has a waterfall called Chitrakote, as wide as a football field, that roars like a lion!",
+    "language": "Hindi, Chhattisgarhi","greeting": "Johar",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Chitrakote_Falls_India.jpg/500px-Chitrakote_Falls_India.jpg",
+        "caption": "Chitrakote Waterfall"
+      }
+    ]
+  },
+  {
+    "name": "Goa",
+    "fact": "Goa’s beaches were once ruled by Portuguese pirates, and you can still see their old forts by the sea!",
+    "language": "Konkani, Marathi","greeting": "Namaskar",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fort_Aguada%2C_Goa.jpg/500px-Fort_Aguada%2C_Goa.jpg",
+        "caption": "Aguada Fort"
+      }
+    ]
+  },
+  {
+    "name": "Gujarat",
+    "fact": "Gandhinagar, named after Mahatma Gandhi, is a super-planned city with streets as neat as a chessboard!",
+    "language": "Gujarati","greeting": "Kem Cho",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sabarmati_Ashram_Ahmedabad.jpg/500px-Sabarmati_Ashram_Ahmedabad.jpg",
+        "caption": "Sabarmati Ashram"
+      }
+    ]
+  },
+  {
+    "name": "Haryana",
+    "fact": "Haryana has a museum with ancient chariots and swords, like stepping into a warrior’s time machine!",
+    "language": "Hindi, Haryanvi","greeting": "Namaste",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Kurukshetra_Battlefield.jpg/500px-Kurukshetra_Battlefield.jpg",
+        "caption": "Kurukshetra"
+      }
+    ]
+  },
+  {
+    "name": "Himachal Pradesh",
+    "fact": "The world’s highest cricket ground is here, at 2,144 meters, where balls can fly super far!",
+    "language": "Hindi, Pahari","greeting": "Namaste",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/HPCA_Stadium_Dharamshala.jpg/500px-HPCA_Stadium_Dharamshala.jpg",
+        "caption": "Dharamshala Cricket Stadium"
+      }
+    ]
+  },
+  {
+    "name": "Jharkhand",
+    "fact": "This state has a hill called Parasnath where people climb 27 km to visit a sacred Jain temple at the top!",
+    "language": "Hindi, Santhali","greeting": "Johar",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Parasnath_Hill_Jharkhand.jpg/500px-Parasnath_Hill_Jharkhand.jpg",
+        "caption": "Parasnath Hill"
+      }
+    ]
+  },
+  {
+    "name": "Karnataka",
+    "fact": "Bengaluru, the tech city, helps make apps and games you might play on your phone!",
+    "language": "Kannada","greeting": "Namaskara",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Vidhana_Soudha_Bangalore.jpg/500px-Vidhana_Soudha_Bangalore.jpg",
+        "caption": "Vidhana Soudha"
+      }
+    ]
+  },
+  {
+    "name": "Kerala",
+    "fact": "Kerala’s backwaters are like a maze of rivers where people live on houseboats, like floating homes!",
+    "language": "Malayalam","greeting": "Namaskaram",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Kerala_Backwaters_Alappuzha.jpg/500px-Kerala_Backwaters_Alappuzha.jpg",
+        "caption": "Kerala Backwaters"
+      }
+    ]
+  },
+  {
+    "name": "Madhya Pradesh",
+    "fact": "The Khajuraho temples have carvings so detailed, they look like stone comic books from 1,000 years ago!",
+    "language": "Hindi","greeting": "Namaste",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Khajuraho_Temple_Complex.jpg/500px-Khajuraho_Temple_Complex.jpg",
+        "caption": "Khajuraho Temple"
+      }
+    ]
+  },
+  {
+    "name": "Maharashtra",
+    "fact": "Mumbai’s Bollywood makes more movies than any other place in the world—over 1,000 films a year!",
+    "language": "Marathi", "greeting": "Namaskar",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gateway_of_India_Mumbai.jpg/500px-Gateway_of_India_Mumbai.jpg",
+        "caption": "Gateway of India"
+      }
+    ]
+  },
+  {
+    "name": "Manipur",
+    "fact": "Manipur invented polo, a game where players ride horses and hit a ball, long before it became famous!",
+    "language": "Manipuri (Meiteilon)","greeting": "Khurumjari",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Loktak_Lake_Manipur.jpg/500px-Loktak_Lake_Manipur.jpg",
+        "caption": "Loktak Lake"
+      }
+    ]
+  },
+  {
+    "name": "Meghalaya",
+    "fact": "This state has living root bridges made by trees, grown by people to cross rivers!",
+    "language": "Khasi, Garo, English","greeting": "Kumno",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Living_Root_Bridge_Meghalaya.jpg/500px-Living_Root_Bridge_Meghalaya.jpg",
+        "caption": "Living Root Bridge"
+      }
+    ]
+  },
+  {
+    "name": "Mizoram",
+    "fact": "Shops here can run without shopkeepers! Buyers leave money in a box, trusting each other.",
+    "language": "Mizo, English","greeting": "Chibai",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Mizoram_Hills_Aizawl.jpg/500px-Mizoram_Hills_Aizawl.jpg",
+        "caption": "Mizoram Hills"
+      }
+    ]
+  },
+  {
+    "name": "Nagaland",
+    "fact": "The Hornbill Festival has tribes dancing in colorful costumes, like a giant cultural party!",
+    "language": "English, Naga languages-Ao","greeting": "Ola",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Hornbill_Festival_Nagaland.jpg/500px-Hornbill_Festival_Nagaland.jpg",
+        "caption": "Hornbill Festival"
+      }
+    ]
+  },
+  {
+    "name": "Odisha",
+    "fact": "The Sun Temple in Konark has wheels carved so perfectly, it looks like a giant stone chariot!",
+    "language": "Odia","greeting": "NamaskÄra",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Konark_Sun_Temple_Odisha.jpg/500px-Konark_Sun_Temple_Odisha.jpg",
+        "caption": "Konark Sun Temple"
+      }
+    ]
+  },
+  {
+    "name": "Punjab",
+    "fact": "The Golden Temple in Amritsar serves free meals to 100,000 people daily, like a super big cafeteria!",
+    "language": "Punjabi","greeting": "Sat Sri Akal",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Golden_Temple_Amritsar.jpg/500px-Golden_Temple_Amritsar.jpg",
+        "caption": "Golden Temple"
+      }
+    ]
+  },
+  {
+    "name": "Sikkim",
+    "fact": "Gangtok’s name means 'hilltop,' and it’s so high up, you feel like you’re touching the clouds!",
+    "language": "Nepali, Sikkimese, English","greeting": "Namaste",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Gangtok_City_Sikkim.jpg/500px-Gangtok_City_Sikkim.jpg",
+        "caption": "Gangtok City"
+      }
+    ]
+  },
+  {
+    "name": "Telangana",
+    "fact": "Hyderabad’s Golconda Fort has a clap spot where one clap can be heard a kilometer away!",
+    "language": "Telugu, Urdu","greeting": "Namaskaram",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Golconda_Fort_Hyderabad.jpg/500px-Golconda_Fort_Hyderabad.jpg",
+        "caption": "Golconda Fort"
+      }
+    ]
+  },
+  {
+    "name": "Tripura",
+    "fact": "The Ujjayanta Palace in Agartala is so grand, it looks like a castle from a storybook!",
+    "language": "Bengali, Kokborok","greeting": "Khamar Bani",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Ujjayanta_Palace_Agartala.jpg/500px-Ujjayanta_Palace_Agartala.jpg",
+        "caption": "Ujjayanta Palace"
+      }
+    ]
+  },
+  {
+    "name": "Uttar Pradesh",
+    "fact": "In Barsana, during Holi, women playfully chase men with sticks, celebrating a fun Krishna story!",
+    "language": "Hindi, Urdu","greeting": "Namaste",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Taj_Mahal_Agra.jpg/500px-Taj_Mahal_Agra.jpg",
+        "caption": "Taj Mahal"
+      }
+    ]
+  },
+  {
+    "name": "Uttarakhand",
+    "fact": "Roopkund Lake hides skeletons at the bottom, a mystery that makes it a spooky adventure spot!",
+    "language": "Hindi, Garhwali, Kumaoni","greeting": "Namaskar",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Roopkund_Lake_Uttarakhand.jpg/500px-Roopkund_Lake_Uttarakhand.jpg",
+        "caption": "Roopkund Lake"
+      }
+    ]
+  },
+  {
+    "name": "West Bengal",
+    "fact": "The Sundarbans is home to the Royal Bengal Tiger, a fierce cat that swims in rivers!",
+    "language": "Bengali","greeting": "Nomoskar",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Sundarbans_Tiger_West_Bengal.jpg/500px-Sundarbans_Tiger_West_Bengal.jpg",
+        "caption": "Sundarbans Tiger"
+      }
+    ]
+  },
+  {
+    "name": "Andaman and Nicobar Islands",
+    "fact": "These islands have a floating post office on a boat in the middle of the sea!",
+    "language": "Hindi, English, Bengali","greeting": "Nomoskar",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Radhanagar_Beach_Andaman.jpg/500px-Radhanagar_Beach_Andaman.jpg",
+        "caption": "Radhanagar Beach"
+      }
+    ]
+  },
+  {
+    "name": "Chandigarh",
+    "fact": "This city is so organized, it’s called the 'City Beautiful' and shared by two states!",
+    "language": "Hindi, Punjabi, English","greeting": "Sat Sri Akal",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Rock_Garden_Chandigarh.jpg/500px-Rock_Garden_Chandigarh.jpg",
+        "caption": "Rock Garden"
+      }
+    ]
+  },
+  {
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "fact": "Dudhni Lake is nicknamed the 'Kashmir of the West' for its beauty!",
+    "language": "Gujarati, Hindi","greeting": "Kem Cho",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Daman_Beach_Diu.jpg/500px-Daman_Beach_Diu.jpg",
+        "caption": "Daman Beach"
+      }
+    ]
+  },
+  {
+    "name": "Delhi",
+    "fact": "The Red Fort in Delhi was once home to emperors and has walls taller than 10 kids stacked up!",
+    "language": "Hindi, English","greeting": "Namaste",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Red_Fort_Delhi.jpg/500px-Red_Fort_Delhi.jpg",
+        "caption": "Red Fort"
+      }
+    ]
+  },
+  {
+    "name": "Jammu and Kashmir",
+    "fact": "Srinagar’s Dal Lake has markets on boats, like a shopping mall that floats!",
+    "language": "Kashmiri, Urdu, Hindi", "greeting": "Salaam Alaikum",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dal_Lake_Srinagar.jpg/500px-Dal_Lake_Srinagar.jpg",
+        "caption": "Dal Lake"
+      }
+    ]
+  },
+  {
+    "name": "Ladakh",
+    "fact": "Ladakh’s Pangong Lake changes colors from blue to green, like a magical painting!",
+    "language": "Ladakhi, Hindi, English", "greeting": "Juley",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Pangong_Lake_Ladakh.jpg/500px-Pangong_Lake_Ladakh.jpg",
+        "caption": "Pangong Lake"
+      }
+    ]
+  },
+  {
+    "name": "Lakshadweep",
+    "fact": "These islands are made of coral, like underwater gardens built by tiny sea creatures!",
+    "language": "Mahi, Malayalam, English","greeting": "Assalaamu Alaikum",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Agatti_Island_Lakshadweep.jpg/500px-Agatti_Island_Lakshadweep.jpg",
+        "caption": "Agatti Island"
+      }
+    ]
+  },
+  {
+    "name": "Puducherry",
+    "fact": "This place feels like France with colorful French-style houses from long ago!",
+    "language": "Tamil, French, English","greeting": "Vanakkam",
+
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Puducherry_French_Quarter.jpg/500px-Puducherry_French_Quarter.jpg",
+        "caption": "French Quarter"
+      }
+    ]
+  }
+]
